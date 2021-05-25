@@ -1,0 +1,37 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "${TASK_NAME}",
+            "image": "${ECR_URL}",
+            "essential": true,
+            "environment": [
+                {
+                    "name": "TOKEN",
+                    "value": "${TOKEN}"
+                }
+            ],
+            "portMappings": [
+                {
+                    "containerPort": 80
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "${TASK_NAME}",
+                    "awslogs-region": "us-east-2",
+                    "awslogs-stream-prefix": "ecslogs"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+      "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "networkMode": "awsvpc",
+    "family": "${TASK_NAME}",
+    "taskRoleArn": "${TASK_ROLE_ARN}",
+    "executionRoleArn": "${EXECUTION_ROLE_ARN}"
+  }

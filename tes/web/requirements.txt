@@ -1,0 +1,13 @@
+PyGithub==1.45
+colored==1.4.2
+ConfigArgParse==0.15.2
+ansi2html==1.5.2
+click==7.1.2
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+Werkzeug==1.0.1
+uWSGI==2.0.19.1
+semver==3.0.0.dev1
+redis==3.5.3

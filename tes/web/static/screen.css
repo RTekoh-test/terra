@@ -1,0 +1,32 @@
+h1,
+input {
+  font-family: Klavika, RocketSans, sans-serif;
+}
+
+.logo {
+  vertical-align: text-top;
+  width:2.5rem;
+}
+
+.search {
+  text-align: center;
+  padding: 6em;
+  margin: auto;
+  max-width: 40em;
+}
+
+/* Purple Buttons */
+.btn-primary {
+  background-color:#623CE4;
+  border-color:#623CE4;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  background-color:#5c3ebe;
+  border-color:#623CE4;
+}
+
+/* Sortable table hover override */
+table.sortable > thead th:hover:not([data-defaultsort=disabled]) {
+  background: #b0b0b0;
+}

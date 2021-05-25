@@ -1,0 +1,4 @@
+platform: 'linux'
+image: 'hal9000/iac'
+build: 'plan-terraform-v3'
+deploy: 'apply-terraform-v3'
